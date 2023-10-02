@@ -23,13 +23,23 @@ $phpmailer->Password = '58038e83c72dd0';
 
 
     $phpmailer->FromName = $_POST['name'];
-    $phpmailer->setFrom ($_POST['email']);
+    $name =  $phpmailer->FromName;
+    $email = $phpmailer->setFrom ($_POST['email']);
     $phpmailer->isHTML(true);
     $phpmailer->Subject = $_POST['subject'];
+    $subject = $phpmailer->Subject;
     $phpmailer->Body = $_POST['message'];
+    $message = $phpmailer->Body;
 
     // Set recipient email address
-    $phpmailer->addAddress('monirbd.me@gmail.com');
+    $to = $phpmailer->addAddress('monirbd.me@gmail.com');
     $phpmailer->send();
+
+    echo "
+        <script>
+            alert('Mail Send Successfully');
+            document.location.href = 'contact-us.php';
+        </script>
+    ";
 }
 ?>
