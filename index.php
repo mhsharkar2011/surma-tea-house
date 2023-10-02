@@ -14,63 +14,42 @@
 
 
     <!-- Carousel Start -->
-    <?php include "pages/slider.php" ?>
+    <?php include "slider.php" ?>
     <!-- Carousel End -->
 
 
     <!-- About Start -->
-    <?php include "pages/about.php" ?>
+    <?php require "about.php" ?>
     <!-- About End -->
 
 
     <!-- Products Start -->
-    <?php include "pages/product.php" ?>
+    <?php include "product.php" ?>
     <!-- Products End -->
 
 
     <!-- Article Start -->
-    <?php include "pages/article.php" ?>
+    <?php include "article.php" ?>
     <!-- Article End -->
 
-
-    <!-- Video Start -->
-    <?php include "pages/video.php" ?>
-    <!-- Video End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
+    <!-- Feature Start -->
+    <?php include "feature.php" ?>
+    <!-- Feature End -->
+    
 
 
     <!-- Store Start -->
-    <?php include "pages/store.php" ?>
+    <?php include "store.php" ?>
     <!-- Store End -->
 
 
     <!-- Testimonial Start -->
-    <?php include "pages/testimonial.php" ?>
+    <?php include "testimonial.php" ?>
     <!-- Testimonial End -->
 
 
     <!-- Contact Start -->
-<?php include "pages/contact.php" ?>
+<?php include "contact.php" ?>
     <!-- Contact Start -->
 
 <?php include "layouts/footer.php" ?>

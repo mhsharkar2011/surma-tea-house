@@ -1,5 +1,3 @@
-<?php require_once "../layouts/header.php" ?>
-<?php require_once "../layouts/navbar.php" ?>
 <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -43,5 +41,3 @@
             </div>
         </div>
     </div>
-
-    <?php require_once "../layouts/footer.php" ?>
