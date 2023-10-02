@@ -1,4 +1,4 @@
-<div class="container-xxl py-5">
+<div class="container-xxl py-5" id="about.php">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6">
@@ -35,6 +35,10 @@
                         </div>
                         <div class="col-sm-4">
                             <img class="img-fluid bg-white w-100" src="../img/about-6.jpg" alt="">
+                        </div>
+                        <div class="border-top mb-4"></div>
+                        <div class="col-lg-12 wow fadeIn text-end" data-wow-delay="0.5s">
+                            <a href="pages/about-us.php" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
                         </div>
                     </div>
                 </div>

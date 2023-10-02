@@ -1,4 +1,4 @@
-<div class="container-xxl py-5">
+<div class="container-xxl py-5" id="store.php">
     <div class="container">
         <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
             <p class="fs-5 fw-medium fst-italic text-primary">Online Store</p>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <a href="" class="btn btn-primary rounded-pill py-3 px-5">View More Products</a>
+                <a href="pages/our-stores.php" class="btn btn-primary rounded-pill py-3 px-5">View More Products</a>
             </div>
         </div>
     </div>

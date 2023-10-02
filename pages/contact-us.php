@@ -1,0 +1,152 @@
+<?php require_once "../layouts/header.php" ?>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <?php require_once "../layouts/navbar.php" ?>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Contact Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl contact py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <p class="fs-5 fw-medium fst-italic text-primary">Contact Us</p>
+                <h1 class="display-6">If You Have Any Query, Please Contact Us</h1>
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="btn-square mx-auto mb-3">
+                        <i class="fa fa-envelope fa-2x text-white"></i>
+                    </div>
+                    <p class="mb-2">info@surmatea.com</p>
+                    <p class="mb-0">support@surmatea.com</p>
+                </div>
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="btn-square mx-auto mb-3">
+                        <i class="fa fa-phone fa-2x text-white"></i>
+                    </div>
+                    <p class="mb-2">02-8829218</p>
+                    <p class="mb-0">....</p>
+                </div>
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="btn-square mx-auto mb-3">
+                        <i class="fa fa-map-marker-alt fa-2x text-white"></i>
+                    </div>
+                    <p class="mb-2">Teliapara, Madhabpur, Habiganj, Sylhet, Bangladesh 3360 Habiganj</p>
+                    <p class="mb-0">Sylhet Division, Bangladesh</p>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <iframe class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35142.80252899753!2d91.36929850412497!3d24.380077524816937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37514f62e0c5cced%3A0x3b7566af16fcda21!2sHabiganj-Shahpur%20Rd!5e0!3m2!1sen!2sbd!4v1696273630018!5m2!1sen!2sbd" frameborder="0" style="height: 100%; min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-4">Need a functional contact form?</h3>
+                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+<!------------------------- Mail Sending Form ------------------------------>
+<form action="" method="post">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                    <label for="name">Your Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    <label for="email">Your Email</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    <label for="subject">Subject</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 120px" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit" name="submit">Send Message</button>
+            </div>
+        </div>
+    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <?php require_once "../layouts/footer.php" ?>
+    <!-- Footer End -->
+
+
+    <?php
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        // Set recipient email address
+        $to = 'monirbd.me@gmail.com';
+
+        // Set headers
+        $headers = "From: $name <$email>" . "\r\n";
+        $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
+
+        // Compose the email message
+        $email_message = "
+    <html>
+    <body>
+        <h2>Contact Form Submission</h2>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Subject:</strong> $subject</p>
+        <p><strong>Message:</strong><br>$message</p>
+    </body>
+    </html>
+    ";
+
+        // Send the email
+        if (mail($to, $subject, $email_message, $headers)) {
+            echo "Your message has been sent successfully!";
+        } else {
+            echo "Sorry, there was an error sending your message.";
+        }
+    } else {
+        // If the form was not submitted, redirect to the form page
+        header("Location: contact-us.php");
+    }
+    ?>
