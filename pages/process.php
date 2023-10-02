@@ -15,24 +15,27 @@ if (isset($_POST['submit'])) {
 $phpmailer = new PHPMailer(true);
 
 $phpmailer->isSMTP();
-$phpmailer->Host = 'sandbox.smtp.mailtrap.io';
+$phpmailer->Host = 'smtp.gmail.com';
 $phpmailer->SMTPAuth = true;
-$phpmailer->Port = 2525;
-$phpmailer->Username = '98175c23341998';
-$phpmailer->Password = '58038e83c72dd0';
+$phpmailer->SMTPSecure = 'ssl';
+$phpmailer->Port = 465;
+$phpmailer->Username = 'monirbd.me@gmail.com';
+$phpmailer->Password = 'alhiqollfegnlpux';
 
 
-    $phpmailer->FromName = $_POST['name'];
-    $name =  $phpmailer->FromName;
-    $email = $phpmailer->setFrom ($_POST['email']);
+    // $phpmailer->FromName = $_POST['name'];
     $phpmailer->isHTML(true);
     $phpmailer->Subject = $_POST['subject'];
-    $subject = $phpmailer->Subject;
     $phpmailer->Body = $_POST['message'];
-    $message = $phpmailer->Body;
-
     // Set recipient email address
-    $to = $phpmailer->addAddress('monirbd.me@gmail.com');
+    $mailReceiver = $phpmailer->Username;
+    $to = $phpmailer->addAddress($mailReceiver, "Monir Hossain");
+    // Sender Email address
+    $emailFrom = $_POST['email'];
+    echo $emailFrom;
+    $name = $_POST['name'];
+    $phpmailer->setFrom ($emailFrom,$name,true);
+}
     $phpmailer->send();
 
     echo "
@@ -41,5 +44,5 @@ $phpmailer->Password = '58038e83c72dd0';
             document.location.href = 'contact-us.php';
         </script>
     ";
-}
+// }
 ?>
