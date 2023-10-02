@@ -1,3 +1,4 @@
+
 <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
@@ -9,8 +10,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="../index.php" class="nav-item nav-link active">Home</a>
+                        <a href="../pages/about.php" class="nav-item nav-link">About</a>
                         <a href="product.html" class="nav-item nav-link">Products</a>
                         <a href="store.html" class="nav-item nav-link">Store</a>
                         <div class="nav-item dropdown">
@@ -31,3 +32,5 @@
             </nav>
         </div>
     </div>
+
+
