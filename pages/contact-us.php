@@ -68,38 +68,38 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h3 class="mb-4">Need a functional contact form?</h3>
                     <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-<!------------------------- Mail Sending Form ------------------------------>
-<form action="" method="post">
-        <div class="row g-3">
-            <div class="col-md-6">
-                <div class="form-floating">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-                    <label for="name">Your Name</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                    <label for="email">Your Email</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-floating">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    <label for="subject">Subject</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-floating">
-                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 120px" required></textarea>
-                    <label for="message">Message</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit" name="submit">Send Message</button>
-            </div>
-        </div>
-    </form>
+                    <!-------------------- Mail Sending Form ------------------------------>
+                    <form action="process.php" method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 120px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" name="submit" value="Send Message" class="btn btn-primary rounded-pill py-3 px-5" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -110,43 +110,3 @@
     <!-- Footer Start -->
     <?php require_once "../layouts/footer.php" ?>
     <!-- Footer End -->
-
-
-    <?php
-    if (isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-        // Set recipient email address
-        $to = 'monirbd.me@gmail.com';
-
-        // Set headers
-        $headers = "From: $name <$email>" . "\r\n";
-        $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-
-        // Compose the email message
-        $email_message = "
-    <html>
-    <body>
-        <h2>Contact Form Submission</h2>
-        <p><strong>Name:</strong> $name</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Subject:</strong> $subject</p>
-        <p><strong>Message:</strong><br>$message</p>
-    </body>
-    </html>
-    ";
-
-        // Send the email
-        if (mail($to, $subject, $email_message, $headers)) {
-            echo "Your message has been sent successfully!";
-        } else {
-            echo "Sorry, there was an error sending your message.";
-        }
-    } else {
-        // If the form was not submitted, redirect to the form page
-        header("Location: contact-us.php");
-    }
-    ?>
