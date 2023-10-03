@@ -5,36 +5,20 @@
                 <h3 class="display-6">What our <span class="text-white">Clients</span> say about our <span class="text-white">Tea</span></h3>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
+               <?php 
+                    for($i = 0; $i<3; $i++){
+                        echo "<div class='testimonial-item p-4 p-lg-5'>
+                        <p class='mb-4'>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                        <div class='d-flex align-items-center justify-content-center'>
+                            <img class='img-fluid flex-shrink-0' src='img/testimonial-1.jpg' alt=''>
+                            <div class='text-start ms-3'>
+                                <h5>Client Name</h5>
+                                <span class='text-primary'>Profession</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
-                        </div>
-                    </div>
-                </div>
+                    </div>";
+                    }
+               ?>
             </div>
         </div>
     </div>
