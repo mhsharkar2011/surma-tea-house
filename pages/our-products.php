@@ -30,37 +30,37 @@
     <!-- Products Start -->
     <div class="container-fluid product py-5">
         <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                 <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p>
-                <h1 class="display-6">Tea has a complex positive effect on the body</h1>
+                <h2 class="display-0">Tea has a complex positive effect on the body</h2>
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
                 <a href="" class="d-block product-item rounded">
-                    <img src="img/product-1.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                    <img src="../img/product-1.jpg" alt="">
+                    <div id="product" class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                         <h4 class="text-primary">Green Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
+                        <span class="text-body" productDetails="Known for their freshness and health benefits, the estate's green teas are carefully crafted to preserve the delicate flavors and antioxidants."></span>
                     </div>
                 </a>
                 <a href="" class="d-block product-item rounded">
-                    <img src="img/product-2.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                    <img src="../img/product-2.jpg" alt="">
+                    <div id="product" class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                         <h4 class="text-primary">Black Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
+                        <span class="text-body" productDetails="Rich, robust, and full-bodied, Surma Tea Estate's black teas are a favorite among those who savor a bold cup of tea"></span>
                     </div>
                 </a>
                 <a href="" class="d-block product-item rounded">
-                    <img src="img/product-3.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Spiced Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
+                    <img src="../img/product-3.jpg" alt="">
+                    <div id="product" class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                        <h4 class="text-primary">Herbal Teas</h4>
+                        <span class="text-body" productDetails="Surma Tea Estate also offers an array of herbal infusions, each thoughtfully blended to provide a soothing and aromatic experience."></span></span>
                     </div>
                 </a>
                 <a href="" class="d-block product-item rounded">
-                    <img src="img/product-4.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                    <img src="../img/product-4.jpg" alt="">
+                    <div id="product" class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                         <h4 class="text-primary">Organic Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
+                        <span class="text-body" productDetails="For those seeking a mild and subtly nuanced tea, the estate's white teas are a perfect choice."></span>
                     </div>
                 </a>
             </div>
