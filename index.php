@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Surma Tea - Tea Shop Website Template</title>
+    <title>Surma Tea Estate (Pvt) Limited</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,17 +45,19 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
             <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" src="img/logo.png" alt="Logo">
+                <img class="img-fluid" src="img/logo.png" alt="Logo" style="height: 56%;">
             </a>
             <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Home</a>
                     <a href="#about.php" class="nav-item nav-link">About</a>
                     <a href="#product.php" class="nav-item nav-link">Products</a>
-                    <a href="#store.php" class="nav-item nav-link">Store</a>
+                    <a href="#feature.php" class="nav-item nav-link">Features</a>
+                    <a href="#blog.php" class="nav-item nav-link">Blogs</a>
+                    <a href="#testimonial.php" class="nav-item nav-link">Testimonial</a>
                     <a href="#contact.php" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="border-start ps-4 d-none d-lg-block">
@@ -83,6 +85,9 @@
     <!-- Feature Start -->
     <?php include "feature.php" ?>
     <!-- Feature End -->
+    <!-- Blogs Start -->
+    <?php include "blog.php" ?>
+    <!-- Blogs End -->
     
     <!-- Store Start -->
     <?php include "store.php" ?>
@@ -101,39 +106,30 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-primary mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Teliapara, Madhabpur, Habiganj,Sylhet, Bangladesh 3360 Habiganj, Sylhet Division, Bangladesh</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>02-8829218</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@surmatea.com</p>
                     <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100057725347394"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                <div class="col-lg-4 col-md-6">
+                <h4 class="text-primary mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="/pages/about-us.php">About Us</a>
+                    <a class="btn btn-link" href="#">Career</a>
+                    <a class="btn btn-link" href="./pages/contact-us.php">Contact Us</a>
+                    <a class="btn btn-link" href="#">Terms & Condition</a>
+                    <a class="btn btn-link" href="#">Support</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-primary mb-4">Subscribed</h4>
+                    <p>To subscribe SingUp in Valid Mail and you will receive our latest news</p>
                     <div class="position-relative w-100">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -150,11 +146,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium" href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a class="fw-medium" href="#">Surma Tea Estate (Pvt) Ltd.</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="fw-medium" href="https://themewagon.com">ThemeWagon</a>
+                    Designed By <a class="fw-medium" href="https://webdevs24.com.com">webdevs24.com</a>
                 </div>
             </div>
         </div>
@@ -179,3 +174,22 @@
 </body>
 
 </html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var currentPage = window.location.hash; // Get the current page URL fragment
+
+    // Loop through each navigation link
+    var navLinks = document.querySelectorAll(".nav-item.nav-link");
+    navLinks.forEach(function (link) {
+        var linkPage = link.getAttribute("data-page");
+
+        // Check if the link's data-page attribute matches the current page URL
+        if (linkPage === currentPage) {
+            link.classList.add("active"); // Add the 'active' class to the matching link
+        }
+    });
+});
+
+</script>

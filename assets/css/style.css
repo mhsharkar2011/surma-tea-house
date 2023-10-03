@@ -53,6 +53,12 @@
     color: var(--light);
 }
 
+.btn-light,
+.btn-outline-primary:hover {
+    color: var(--primary);
+}
+
+
 .btn-secondary,
 .btn-outline-secondary:hover {
     color: var(--dark);

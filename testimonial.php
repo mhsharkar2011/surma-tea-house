@@ -1,8 +1,8 @@
-<div class="container-fluid testimonial py-5 my-5">
+<div class="container-fluid testimonial py-5 my-5" id="testimonial.php">
         <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                 <p class="fs-5 fw-medium fst-italic text-white">Testimonial</p>
-                <h1 class="display-6">What our clients say about our tea</h1>
+                <h3 class="display-6">What our <span class="text-white">Clients</span> say about our <span class="text-white">Tea</span></h3>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
                 <div class="testimonial-item p-4 p-lg-5">
