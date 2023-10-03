@@ -7,8 +7,8 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TEA House</strong></p>
-                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">Organic & Quality Tea Production</h1>
+                                    <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">Surma Tea Estate Limited</strong></p>
+                                    <h5 class="display-4 text-dark mb-4 animated zoomIn">Organic & Quality Tea</h5>
                                     <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore More</a>
                                 </div>
                             </div>
@@ -21,8 +21,8 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TEA House</strong></p>
-                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">Organic & Quality Tea Production</h1>
+                                    <p class="fs-4 text-white animated zoomIn">Crafting Excellence in Tea<strong class="text-dark"></strong></p>
+                                    <h5 class="display-5 text-dark mb-4 animated zoomIn">Surma Tea Estate Limited</h5>
                                     <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore More</a>
                                 </div>
                             </div>

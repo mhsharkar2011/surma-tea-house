@@ -9,8 +9,8 @@
                     <p class="fs-5 fw-medium fst-italic text-primary">Featured Acticle</p>
                     <h1 class="display-6">The history of tea leaf in the world</h1>
                 </div>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna. Tempor erat elitr rebum at clita.</p>
+                <p class="mb-4">Surma Tea Estate Limited is a renowned name in the world of tea production and distribution. Nestled in the picturesque landscapes of Bangladesh, this tea estate has a rich history of producing some of the finest teas in the region. From its lush tea gardens to its commitment to quality, Surma Tea Estate has become synonymous with excellence in the world of tea.</p>
+                <p class="mb-4">Surma Tea Estate Limited was established with a vision to create exceptional teas that would be cherished by tea connoisseurs worldwide. The estate's commitment to quality begins with the cultivation of tea leaves. Surma Tea Estate is home to acres of meticulously maintained tea gardens, where tea plants thrive in the region's unique climate and soil conditions. The estate's dedication to sustainable and eco-friendly farming practices ensures that the tea plants grow in harmony with nature.</p>
                 <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
             </div>
         </div>
@@ -24,7 +24,8 @@
                 <div class="col-lg-6 py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="py-5">
                         <h1 class="display-6 mb-4">Tea is a drink of <span class="text-white">health</span> and <span class="text-white">beauty</span></h1>
-                        <h5 class="fw-normal lh-base fst-italic text-white mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</h5>
+                        <h5 class="fw-normal lh-base fst-italic text-white mb-5">
+                            One of the defining features of Surma Tea Estate Limited is its commitment to the art of tea processing. The tea leaves, once plucked, undergo a series of carefully monitored and controlled processes to bring out their unique flavors and aromas. From withering and rolling to oxidation and drying, each step in the processing chain is a testament to the estate's craftsmanship.</h5>
                         <div class="row g-4 mb-5">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
