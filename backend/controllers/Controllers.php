@@ -59,7 +59,7 @@ class Controller
   {
     if ( $this->login_session_client()==true) 
     {
-      if ($_SESSION['client_user_type']=='student') 
+      if ($_SESSION['client_user_type']=='guest') 
       {
         return 3;
       }
