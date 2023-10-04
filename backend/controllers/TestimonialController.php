@@ -1,8 +1,13 @@
 <?php
+require_once "Controller.php";
+require_once "../models/Testimonial.php";
 
+use Testimonial;
 
-class TestimonialController extends Controllers
+class TestimonialController extends Controller
 {
+
+    use Testimonial;
 
     // Select or Read data
     public function select($query)
@@ -50,6 +55,4 @@ class TestimonialController extends Controllers
             return false;
         }
     }
-}
-
 }
