@@ -510,3 +510,27 @@
 .copyright a:hover {
     color: #FFFFFF !important;
 }
+
+
+
+
+/* Define a class for the scrolling animation */
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+    color: red;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+/* Define the keyframes for the animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

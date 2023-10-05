@@ -42,31 +42,35 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid bg-white sticky-top">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" src="img/logo.png" alt="Logo" style="height: 56%;">
-            </a>
-            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#about.php" class="nav-item nav-link">About</a>
-                    <a href="#product.php" class="nav-item nav-link">Products</a>
-                    <a href="#feature.php" class="nav-item nav-link">Features</a>
-                    <a href="#blog.php" class="nav-item nav-link">Blogs</a>
-                    <a href="#testimonial.php" class="nav-item nav-link">Testimonial</a>
-                    <a href="#contact.php" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="border-start ps-4 d-none d-lg-block">
-                    <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
-                </div>
+        <div class="container">
+            <!-- Under construction -->
+            <div class="scrolling-text">
+                The site is under construction ...
             </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                <a href="index.php" class="navbar-brand">
+                    <img class="img-fluid" src="img/logo.png" alt="Logo" style="height: 56%;">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link">Home</a>
+                        <a href="#about.php" class="nav-item nav-link">About</a>
+                        <a href="#product.php" class="nav-item nav-link">Products</a>
+                        <a href="#feature.php" class="nav-item nav-link">Features</a>
+                        <a href="#blog.php" class="nav-item nav-link">Blogs</a>
+                        <a href="#testimonial.php" class="nav-item nav-link">Testimonial</a>
+                        <a href="#contact.php" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="border-start ps-4 d-none d-lg-block">
+                        <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
-</div>
     <!-- Navbar End -->
 
 
@@ -88,7 +92,7 @@
     <!-- Blogs Start -->
     <?php include "blog.php" ?>
     <!-- Blogs End -->
-    
+
     <!-- Store Start -->
     <?php include "store.php" ?>
     <!-- Store End -->
@@ -99,7 +103,7 @@
 
 
     <!-- Contact Start -->
-<?php include "contact.php" ?>
+    <?php include "contact.php" ?>
     <!-- Contact Start -->
 
 
@@ -120,7 +124,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                <h4 class="text-primary mb-4">Quick Links</h4>
+                    <h4 class="text-primary mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="/pages/about-us.php">About Us</a>
                     <a class="btn btn-link" href="#">Career</a>
                     <a class="btn btn-link" href="./pages/contact-us.php">Contact Us</a>
@@ -177,19 +181,18 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    var currentPage = window.location.hash; // Get the current page URL fragment
+    document.addEventListener("DOMContentLoaded", function() {
+        var currentPage = window.location.hash; // Get the current page URL fragment
 
-    // Loop through each navigation link
-    var navLinks = document.querySelectorAll(".nav-item.nav-link");
-    navLinks.forEach(function (link) {
-        var linkPage = link.getAttribute("data-page");
+        // Loop through each navigation link
+        var navLinks = document.querySelectorAll(".nav-item.nav-link");
+        navLinks.forEach(function(link) {
+            var linkPage = link.getAttribute("data-page");
 
-        // Check if the link's data-page attribute matches the current page URL
-        if (linkPage === currentPage) {
-            link.classList.add("active"); // Add the 'active' class to the matching link
-        }
+            // Check if the link's data-page attribute matches the current page URL
+            if (linkPage === currentPage) {
+                link.classList.add("active"); // Add the 'active' class to the matching link
+            }
+        });
     });
-});
-
 </script>
